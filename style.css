@@ -5,7 +5,7 @@ html {
 
 body {
     margin: 0;
-    padding: 0 100px;
+    padding: 0 200px;
     min-height: 100vh;
     display: flex;
     flex-direction: column; 
@@ -85,19 +85,16 @@ img {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px 0;
-
-    border: 5px solid red;
-    
-
-    
-
-}
+    padding: 0px;
+    margin: 20px 0px;
+    }
 
 .section-two {
     background-color: white;
     padding-left: 120px;
     padding-right: 120px;
+    padding-top: 0px;
+    padding-bottom: 60px;
     flex: 1;
 }
 
@@ -106,21 +103,28 @@ img {
     font-size: 36px;
     font-weight: bold;
     text-align: center;
+    margin: 0px;
+    padding: 20px 0px;
 }
-
 
 .all-boxes {
     display: flex;  
     justify-content: center;
     gap: 20px;
-    text-align: center;  
-    padding-bottom: 20px;
+    text-align: center; 
+    margin:0px;
+    padding: 0px
+    
 }
 .box-one,
 .box-two,
 .box-three,
 .box-four {
-    height: 260px;
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+    border-color: #3882F6;
+    border-style: solid;
 }
 
 .all-boxes > img {
@@ -132,8 +136,7 @@ img {
 
 .section-three {
     background-color: #E5E7EB;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 40px 240px;
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
@@ -141,6 +144,11 @@ img {
     flex: 1;
 }
 
+#author {
+    text-align: right;
+    font-weight: bold;  
+    font-style: none;
+}
 
 
 .section-four-container {
@@ -149,9 +157,9 @@ img {
 }
 
 .section-four {
-    margin: 30px;
+    margin: 40px 120px;
     background-color: #3882F6;
-    padding: 40px 80px;
+    padding: 40px 120px;
     border-radius: 8px;
     font-size: 18px;
     color: #E5E7EB;
