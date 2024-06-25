@@ -1,140 +1,230 @@
-html {
-    background-color: black;
-}
-body {
+* {
     margin: 0;
-    padding: 0 50px;
-    min-height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+body {
     display: flex;
     flex-direction: column; 
 }
-.header {
+
+
+
+
+
+
+.header-container {
     background-color: #1F2937;
-    font-size: 18;
     color: #F9FAF8;
-    margin-bottom: auto;
 }
-.header > ul {
+
+.header-container ul {
     list-style: none;
     display: flex;
-    margin-right: auto;
-    padding: 0px;
+    align-items: center;
+   
     gap: 24px;
-    padding-right: 100px;
+    margin: 10px auto;
+    padding: 0;
+
+    max-width: 1000px;
 }
 
-.header .left-side {
-    display: flex;
+ul li:first-child {
     margin-right: auto;
-    padding-left: 100px;
     font-weight: bold;
 }
-.section-one {
-    background-color: #1F2937;
-    padding-left: 100px;
-    padding-right: 100px;
-    flex: 1;
-    display: flex; 
-    flex-wrap: wrap;
- }
 
-.section-one .left-side {
-    flex: 2 1 auto;
+
+
+
+
+.section-one-container {
+    flex: 1;
+    background-color: #1F2937;
 }
 
-.section-one .heading {
-    font-size: 48px;
+.section-one {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    display: flex;
+}
+
+.section-one-text {
+    flex: 1.3;
+    min-height: 300px;
+}
+
+.section-one-image {
+    flex: 1;
+    max-width: 100%;
+
+    background-image: url("./images/dog-1280x960.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;    
+}
+
+
+
+
+
+
+.section-one-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section-one-text .heading {
+    font-size: 3rem;
     color: #F9FAF8;
     font-weight: bold;
-    margin-bottom: 0px;
+    margin-bottom: 12px;
 }
-.section-one .body {
+
+.section-one-text .body {
     color: #E5E7EB;
-    font-size: 18px; 
-    margin-top: 0px;
+    margin-bottom: 12px;
 }
-.section-one button {
+
+.section-one-text button {
+    align-self: flex-start;
+
     background-color: #3882F6;
     border: 0;
-    padding: 12px 24px;
+    padding: 12px 36px;
     border-radius: 8px;
+    
     color: #E5E7EB;
     font-size: 18px; 
     font-weight: bold;
 }
 
-.section-one img {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 0px;
-    margin: 20px 0px;
-    height: auto;
-    max-width: 20rem;
+
+
+
+
+
+
+.section-two-container {
+    flex: 1;
+    background-color: white;
 }
 
 .section-two {
-    background-color: white;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 0px;
-    padding-bottom: 60px;
-    flex: 1;  
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
 }
 
-.section-two p {
+.section-two > p {
     color: #1F2937;
     font-size: 36px;
     font-weight: bold;
     text-align: center;
-    margin: 0px;
-    padding: 20px 0px;
+    padding-bottom: 20px;
 }
 
 .all-boxes {
     display: flex;  
     justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 20px;
-    text-align: center; 
-    margin: 0px;
-    padding: 0px;   
+
+    padding-bottom: 100px;
 }
-.box-one,
-.box-two,
-.box-three,
-.box-four {
+
+.section-two-box {
+    height: 200px;
+    width: 200px;
+}
+
+
+.image-one,
+.image-two,
+.image-three,
+.image-four {
     height: 200px;
     width: 200px;
     border-radius: 8px;
-    border-color: #3882F6;
-    border-style: solid;
-    margin-bottom: 20px;
+    border: 2px solid  #3882F6;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
-.all-boxes  img {
-    height: 0;
-    min-height: 100%;
-    max-width: 100%;
+.section-two-text {
+    padding: 10px 0;
+    text-align: center;
 }
 
+
+.image-one {
+    background-image: url("./images/cat.jpg");
+}
+.image-two {
+    background-image: url("./images/polar-bear.jpg");
+}
+.image-three {
+    background-image: url("./images/ring-tailed-lemur.jpg");
+    background-position: top;
+}
+.image-four {
+    background-image: url("./images/wolf.png");
+}
+
+
+
+
+
+
+
+
+
+
+.section-three-container {
+    flex: 1;
+    background-color: #E5E7EB;   
+    
+}
 
 .section-three {
-    background-color: #E5E7EB;
-    padding: 40px 240px;
-    font-size: 36px;
-    font-style: italic;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 0px;
+}
+
+
+.section-three > p {
+    font-size: 1.5rem;
     color: #1F2937;
-    text-align: center;
-    flex: 1;
+    font-style: italic;
+    padding-bottom: 10px;
+
 }
 
 #author {
+    font-size: 1rem;
     text-align: right;
     font-weight: bold;  
     font-style: none;
 }
+
+
+
+
+
+
+
 
 
 .section-four-container {
@@ -143,21 +233,25 @@ body {
 }
 
 .section-four {
-    margin: 40px 120px;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 40px 120px;      
     background-color: #3882F6;
-    padding: 40px 120px;
     border-radius: 8px;
-    font-size: 18px;
     color: #E5E7EB;
-    display: flex;
-    
+    display: flex; 
+}
+
+.section-four p:nth-of-type(1){
+    font-weight:900;
+    font-size: 1.1rem;
 }
 .section-four .button {
     display: flex;
     align-items: center;
     margin-left: auto;
 }
-.section-four button {
+.section-four-container button {
     background-color: #3882F6;
     padding: 12px 24px;
     border-radius: 8px;
@@ -167,20 +261,12 @@ body {
     border-style: solid;
 }
 
-.section-four .first-row {
-    margin-bottom: 0px;
-    font-weight: bold;
-    font-size: 24px;
-}
 
-.section-four .second-row {
-    margin-top: 0px;
-    font-size: 18px; 
-}
 
-.footer {
+.footer-container {
     background-color: #1F2937;
     color: #F9FAF8;
     padding: 36px;
-    margin-top: auto;    
+    margin-top: auto;
+    text-align: center;    
 }
